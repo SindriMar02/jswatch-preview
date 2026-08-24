@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="en" class="ui-dark">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>JS Watch co. Reykjavík — Probably the world's smallest watch manufacturer</title>
+<meta name="description" content="The first and only watch manufacturer in Iceland. Mechanical watches designed, assembled and regulated by hand at Laugavegur 62, Reykjavík, since 2005.">
+<meta name="robots" content="noindex,nofollow">
+<meta name="theme-color" content="#121316">
+<link rel="preload" as="font" type="font/woff2" href="assets/fonts/Boska-Light.woff2" crossorigin>
+<link rel="preload" as="font" type="font/woff2" href="assets/fonts/Switzer-Regular.woff2" crossorigin>
+<link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+<link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon-32.png">
+<link rel="apple-touch-icon" sizes="180x180" href="assets/img/favicon-180.png">
+<link rel="stylesheet" href="styles.css">
+<script>
+/* Raise the curtain before first paint when arriving from another page in the
+   site, so the incoming page never flashes its raw top. */
+try { if (sessionStorage.getItem('jsw-nav')) { document.documentElement.classList.add('is-entering'); sessionStorage.removeItem('jsw-nav'); } } catch (e) {}
+</script>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+
+<div id="page-overlay" class="page-overlay"></div>
+
+<!-- ══════════════ PRELOADER ══════════════ -->
+<div id="preloader" class="preloader">
+  <div class="preloader__inner">
+    <div class="preloader__mark">
+      <span class="preloader__name">JS WATCH co.</span>
+      <span class="preloader__place">REYKJAVÍK</span>
+    </div>
+    <div class="preloader__line"><span id="preloader-fill" class="preloader__fill"></span></div>
+    <div class="preloader__count"><span id="preloader-counter">0</span><span class="preloader__pct">%</span></div>
+  </div>
+</div>
+
+<!-- ══════════════ HEADER ══════════════ -->
+<header id="header" class="header ui-dark">
+  <a class="header__brand" href="#top" aria-label="JS Watch co. Reykjavík — top of page">
+    <span class="header__brand-name">JS WATCH co.</span>
+    <span class="header__brand-sub">REYKJAVÍK</span>
+  </a>
+  <nav class="header__nav" aria-label="Sections">
+    <a href="#dial" class="text-small">Collection</a>
+    <a href="#caliber" class="text-small">Movement</a>
+    <a href="#showcase" class="text-small">Watches</a>
+    <a href="#charts" class="text-small">Find us</a>
+    <a href="#visit" class="text-small">Visit</a>
+  </nav>
+  <a class="header__cta text-small" href="#visit">Visit the workshop<span class="header__cta-arrow" aria-hidden="true">→</span></a>
+  <button id="menu-toggle" class="header__burger" aria-label="Open menu" aria-expanded="false"><span></span><span></span></button>
+</header>
+
+<!-- ══════════════ MENU ══════════════ -->
+<div id="menu" class="menu" aria-hidden="true">
+  <ul class="menu__list">
+    <li><a href="#dial" class="js-menu-link h2">Collection</a></li>
+    <li><a href="#makers" class="js-menu-link h2">The four</a></li>
+    <li><a href="#caliber" class="js-menu-link h2">The movement</a></li>
+    <li><a href="#showcase" class="js-menu-link h2">The watches</a></li>
+    <li><a href="#charts" class="js-menu-link h2">Where to find it</a></li>
+    <li><a href="#fame" class="js-menu-link h2">Hall of fame</a></li>
+    <li><a href="#visit" class="js-menu-link h2">Visit</a></li>
+  </ul>
+  <div class="menu__foot">
+    <p class="text-small">Laugavegur 62 · 101 Reykjavík</p>
+    <p class="text-small">+354 551 4100</p>
+  </div>
+</div>
+
+<main id="main">
+
+<!-- ══════════════ 1 · HERO ══════════════ -->
+<section id="top" class="section section--top ui-dark" data-hold>
+  <div class="sticky sticky--full-height sticky--under-next" style="height:200svh" data-parallax-pattern="sectionOutTiny">
+    <div class="sticky__layer sticky__layer--sticky">
+      <div class="intro">
+        <div class="intro__media parallax-image-move">
+          <img class="intro__img appear" data-img="workshop" data-w="720 1440 2200" alt="Four watchmakers at the bench in the JS Watch co. workshop on Laugavegur, Reykjavík" fetchpriority="high" width="720" height="448">
+        </div>
+        <div class="intro__scrim" aria-hidden="true"></div>
+        <div class="intro__content">
+          <p class="intro__eyebrow text-small" data-reveal="wipe" data-reveal-delay="200">Laugavegur 62 · Reykjavík</p>
+          <h1 class="intro__title h0" data-reveal="title" data-reveal-delay="320">Probably the world’s smallest watch manufacturer</h1>
+          <div class="intro__meta" data-reveal="fade-in slow" data-reveal-delay="900">
+            <p class="intro__lede">The first and only watch manufacturer in Iceland. Every timepiece designed, assembled, regulated and inspected by hand, on one bench, in the middle of the city.</p>
+            <p class="intro__since"><span class="numeral-sm">2005</span><span class="intro__since-label text-small">Founded</span></p>
+          </div>
+        </div>
+        <div class="intro__credit text-small">Their own words, since 2005</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════ 2 · THE FOUR ══════════════ -->
+<section id="makers" class="section section--makers ui-dark">
+  <div class="sticky sticky--full-height" style="height:170svh">
+   <div class="sticky__layer sticky__layer--sticky l-makers">
+    <div class="l-chapter-ground parallax-image-move" aria-hidden="true">
+      <img class="appear" data-img="g-guilloche" data-w="720 1440 2200" data-parallax-pattern="backgroundMove" alt="">
+    </div>
+    <div class="l-chapter-ground__scrim" aria-hidden="true"></div>
+    <div class="l-makers__head" data-parallax-pattern="makersHead">
+      <p class="text-small" data-reveal="wipe">The manufacture</p>
+      <h2 class="h1" data-reveal="title">Four people.<br>One bench.</h2>
+      <p class="l-makers__lede" data-reveal="text">Three of them are the same family. Every watch that leaves Iceland has been through all four pairs of hands, and each of them is wearing one.</p>
+    </div>
+
+    <div class="l-makers__row" data-reveal-group data-reveal-delay="110">
+      <figure class="l-makers__person" data-reveal="rise" data-parallax-pattern="makersDrift1">
+        <img class="appear" data-img="gilbert" data-w="720" alt="Gilbert Ó. Guðjónsson, master watchmaker, wearing a JS Watch timepiece">
+        <figcaption>
+          <span class="l-makers__name h3">Gilbert Ó. Guðjónsson</span>
+          <span class="text-small">Master watchmaker</span>
+        </figcaption>
+      </figure>
+      <figure class="l-makers__person" data-reveal="rise" data-parallax-pattern="makersDrift2">
+        <img class="appear" data-img="siggi" data-w="720" alt="Sigurður Gilbertsson, watchmaker and technical director">
+        <figcaption>
+          <span class="l-makers__name h3">Sigurður Gilbertsson</span>
+          <span class="text-small">Watchmaker &amp; technical director</span>
+        </figcaption>
+      </figure>
+      <figure class="l-makers__person" data-reveal="rise" data-parallax-pattern="makersDrift3">
+        <img class="appear" data-img="gilbertjr" data-w="720" alt="Gilbert Sigurðsson Junior, watchmaker, third generation">
+        <figcaption>
+          <span class="l-makers__name h3">Gilbert Sigurðsson Jr.</span>
+          <span class="text-small">Watchmaker · third generation</span>
+        </figcaption>
+      </figure>
+      <figure class="l-makers__person" data-reveal="rise" data-parallax-pattern="makersDrift4">
+        <img class="appear" data-img="keli" data-w="720" alt="Grímkell Sigurþórsson, design and marketing">
+        <figcaption>
+          <span class="l-makers__name h3">Grímkell Sigurþórsson</span>
+          <span class="text-small">Design &amp; marketing</span>
+        </figcaption>
+      </figure>
+    </div>
+
+    <dl class="l-makers__facts" data-reveal-group data-reveal-delay="90">
+      <div data-reveal="rise"><dt class="numeral-sm">2005</dt><dd class="text-small">The year the first collection appeared</dd></div>
+      <div data-reveal="rise"><dt class="numeral-sm">3</dt><dd class="text-small">Generations of the same family at the bench</dd></div>
+      <div data-reveal="rise"><dt class="numeral-sm">1</dt><dd class="text-small">Room — workshop, showroom and studio</dd></div>
+    </dl>
+   </div>
+  </div>
+</section>
+
+<!-- ══════════════ 3 · THE MOVEMENT ══════════════ -->
+<section id="caliber" class="section section--caliber ui-dark" data-hold>
+  <div class="l-caliber__bg parallax-image-move">
+    <img class="appear" data-img="soprod" data-w="720 1440 2200" data-parallax-pattern="backgroundMove" alt="A Swiss mechanical movement with a rose-gold rotor engraved JS Watch co. Reykjavík" width="720" height="482">
+  </div>
+  <div class="l-caliber__scrim" aria-hidden="true"></div>
+  <div class="l-caliber__content">
+    <p class="text-small" data-reveal="fade-in">The movement</p>
+    <h2 class="h1" data-reveal="title">Twenty&#8209;five jewels, and a rotor signed by hand</h2>
+    <div class="l-caliber__facts" data-reveal-group data-reveal-delay="90">
+      <div class="l-caliber__fact" data-reveal="rise"><span class="numeral-sm">25</span><span class="text-small">Jewels, engraved on the caseback</span></div>
+      <div class="l-caliber__fact" data-reveal="rise"><span class="numeral-sm">316L</span><span class="text-small">German stainless steel</span></div>
+      <div class="l-caliber__fact" data-reveal="rise"><span class="numeral-sm">2</span><span class="text-small">Sapphire crystals — front and back</span></div>
+      <div class="l-caliber__fact" data-reveal="rise"><span class="numeral-sm">1:27</span><span class="text-small">Minutes a day a 99.9%&#8209;accurate watch drifts</span></div>
+    </div>
+    <p class="l-caliber__body" data-reveal="text">Components come from a small network of specialists in Switzerland and Germany, many of whom have spent generations perfecting a single part. They return to Reykjavík to be assembled, regulated and inspected here — which is why the back of the case is glass.</p>
+  </div>
+</section>
+
+<!-- ══════════════ 4 · THESIS BAND ══════════════ -->
+<section id="thesis" class="section section--thesis ui-light" data-hold>
+  <div class="l-band">
+    <div class="l-band__bg parallax-image-move">
+      <img class="appear" data-img="gangverk" data-w="720 1440" data-parallax-pattern="backgroundMove" alt="A watchmaker in plus-fours leaning against an oversized mechanical movement" width="720" height="480">
+    </div>
+    <div class="l-band__content" data-parallax-pattern="bandTitle">
+      <h2 class="h1" data-reveal="title">A watch is small.<br>Making one is not.</h2>
+      <p class="l-band__sub" data-reveal="text" data-reveal-delay="200">Four people. One bench. Three generations of the same family at it.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════ 5 · THE DIAL (ring selector) ══════════════ -->
+<section id="dial" class="section section--dial ui-dark" data-hold>
+  <div class="sticky sticky--full-height" style="height:440svh">
+    <div class="sticky__layer sticky__layer--sticky l-dial">
+      <div class="l-chapter-ground parallax-image-move" aria-hidden="true">
+        <img class="appear" data-img="g-movement" data-w="720 1440" data-parallax-pattern="backgroundMove" alt="">
+      </div>
+      <div class="l-chapter-ground__scrim" aria-hidden="true"></div>
+
+      <div class="l-dial__head" data-parallax-pattern="dialTitle">
+        <p class="text-small">The collection</p>
+        <h2 class="h2">Six families</h2>
+      </div>
+
+      <!-- desktop: the rotating dial -->
+      <div class="l-dial__stage" id="dial-stage" data-parallax-pattern="dialStage">
+        <svg class="l-dial__furniture" viewBox="0 0 1000 1000" aria-hidden="true">
+          <circle class="l-dial__track" cx="500" cy="500" r="470"/>
+          <circle class="l-dial__track l-dial__track--inner" cx="500" cy="500" r="300"/>
+          <g class="l-dial__ticks" id="dial-ticks"></g>
+        </svg>
+        <div class="l-dial__index" aria-hidden="true">
+          <span class="l-dial__index-mark">12</span>
+        </div>
+        <div class="l-dial__ring" id="dial-ring">
+          <!-- seats injected by app.js from DIAL_FAMILIES -->
+        </div>
+        <div class="l-dial__hub">
+          <p class="l-dial__hub-eyebrow text-small" id="dial-hub-eyebrow">Family 01</p>
+          <p class="l-dial__hub-name h2" id="dial-hub-name">101</p>
+          <p class="l-dial__hub-note" id="dial-hub-note">Named for the postcode of downtown Reykjavík. The first watch the company ever made.</p>
+          <p class="l-dial__hub-price numeral-sm" id="dial-hub-price">from $2,440</p>
+          <p class="l-dial__hub-cta text-small" id="dial-hub-cta">Click the dial to open</p>
+        </div>
+      </div>
+
+      <!-- mobile: its own picker, with its own heading -->
+      <div class="l-dial__mobile" id="dial-mobile">
+        <div class="l-dial__mobile-head">
+          <p class="text-small">The collection</p>
+          <h2 class="h2">Six families</h2>
+        </div>
+        <div class="l-dial__mrail js-dial-mrail">
+          <!-- cards injected by app.js -->
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════ 6 · THE BENCH (growing card) ══════════════ -->
+<section id="bench" class="section section--bench ui-dark" data-hold>
+  <div class="sticky sticky--under-previous sticky--under-next" style="height:560svh">
+    <div class="sticky__layer sticky__layer--sticky l-bench__pan">
+      <img class="appear" data-img="hopmynd" data-w="720 1440 2200" data-parallax-pattern="benchBackground" alt="The four members of the JS Watch team photographed together in the workshop" width="720" height="480">
+      <div class="l-bench__scrim" aria-hidden="true"></div>
+    </div>
+    <div class="sticky__layer sticky__layer--sticky l-bench__cardwrap">
+      <article class="l-bench__card ui-light" data-parallax-pattern="benchCard">
+        <div class="l-bench__cardinner">
+        <p class="text-small">Laugavegur 62</p>
+        <h2 class="h2 l-bench__title">The bench is the factory</h2>
+        <p data-parallax-pattern="benchCardBody">Behind the shopfront on Laugavegur there is a workshop, and that is the whole manufacture. Ideas are drawn, refined and tested here. Parts arrive from Switzerland and Germany. Every watch is put together, timed and checked in this room before it leaves the country.</p>
+        <p class="l-bench__note text-small">Visitors are welcome. It is an owner-operated workshop, showroom and design studio.</p>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════ 7 · THE SHOWCASE (horizontal, full-bleed) ══════════════ -->
+<section id="showcase" class="section section--showcase ui-dark" data-hold>
+  <div class="sticky l-showcase__stage" id="showcase-stage">
+    <div class="sticky__layer sticky__layer--sticky l-showcase__viewport">
+      <div class="l-showcase__track js-showcase-track">
+        <a class="l-showcase__panel" href="watch-101.html">
+          <img class="appear" data-img="p-101" data-w="720 1440 2000" alt="101 by JS Watch co. Reykjavík">
+          <figcaption>
+            <span class="l-showcase__n numeral-sm">01</span>
+            <span class="l-showcase__name h1">101</span>
+            <span class="text-small">Four variants · 38mm, 32mm, Art Deco, 10 Year Edition</span>
+                      <span class="l-showcase__price numeral-sm">from $2,440</span>
+          </figcaption>
+        </a>
+        <a class="l-showcase__panel" href="watch-frisland.html">
+          <img class="appear" data-img="p-frisland" data-w="720 1440 2000" alt="Frisland by JS Watch co. Reykjavík">
+          <figcaption>
+            <span class="l-showcase__n numeral-sm">02</span>
+            <span class="l-showcase__name h1">Frisland</span>
+            <span class="text-small">Three variants · Frisland, 1941, Goð Special Edition</span>
+                      <span class="l-showcase__price numeral-sm">from $3,260</span>
+          </figcaption>
+        </a>
+        <a class="l-showcase__panel" href="watch-islandus.html">
+          <img class="appear" data-img="p-islandus" data-w="720 1440 2000" alt="Islandus by JS Watch co. Reykjavík">
+          <figcaption>
+            <span class="l-showcase__n numeral-sm">03</span>
+            <span class="l-showcase__name h1">Islandus</span>
+            <span class="text-small">Three variants · Islandus, 1919, Dakota</span>
+                      <span class="l-showcase__price numeral-sm">from $3,010</span>
+          </figcaption>
+        </a>
+        <a class="l-showcase__panel" href="watch-sif.html">
+          <img class="appear" data-img="p-sif" data-w="720 1440 2000" alt="SIF by JS Watch co. Reykjavík">
+          <figcaption>
+            <span class="l-showcase__n numeral-sm">04</span>
+            <span class="l-showcase__name h1">SIF</span>
+            <span class="text-small">Four variants · N.A.R.T., 1948, Volcano, Protector</span>
+                      <span class="l-showcase__price numeral-sm">from $3,260</span>
+          </figcaption>
+        </a>
+        <a class="l-showcase__panel" href="watch-vinland.html">
+          <img class="appear" data-img="p-vinland" data-w="720 1440 2000" alt="Vínland by JS Watch co. Reykjavík">
+          <figcaption>
+            <span class="l-showcase__n numeral-sm">05</span>
+            <span class="l-showcase__name h1">Vínland</span>
+            <span class="text-small">Three variants · Chronograph Classic, Tachymeter, Special Edition</span>
+                      <span class="l-showcase__price numeral-sm">from $7,760</span>
+          </figcaption>
+        </a>
+        <a class="l-showcase__panel" href="watch-gilbert.html">
+          <img class="appear" data-img="p-gilbert" data-w="720 1440 2000" alt="Gilbert by JS Watch co. Reykjavík">
+          <figcaption>
+            <span class="l-showcase__n numeral-sm">06</span>
+            <span class="l-showcase__name h1">Gilbert</span>
+            <span class="text-small">Two variants · Gilbert, Bóhem</span>
+                      <span class="l-showcase__price numeral-sm">from $2,860</span>
+          </figcaption>
+        </a>
+      </div>
+      <div class="l-showcase__rail"><span class="l-showcase__fill js-showcase-fill"></span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════ 9 · WHERE IT IS (Reykjavík map) ══════════════ -->
+<section id="charts" class="section l-charts-section ui-dark" data-hold>
+  <div class="l-charts__grid">
+
+    <div class="sticky sticky--full-height l-charts__map-layer">
+      <div class="sticky__layer sticky__layer--sticky l-charts__map-pin">
+        <div class="l-charts__map" data-parallax-pattern="chartsMapFlight">
+          <div class="l-charts__map-inner js-charts-inner">
+            <img class="l-charts__map-img" data-src="assets/img/citymap.webp" alt="A map of central Reykjavík showing the workshop on Laugavegur and the streets around it" width="2000" height="2000" decoding="async">
+            <svg class="l-charts__routes js-charts-routes" viewBox="0 0 100 100" preserveAspectRatio="none" aria-hidden="true"></svg>
+            <div class="l-charts__pins js-charts-pins"></div>
+            <span class="l-charts__home js-charts-home"><i></i><span class="text-small">JS Watch co. · Laugavegur 62</span></span>
+          </div>
+        </div>
+        <div class="l-charts__dim" aria-hidden="true"></div>
+        <div class="l-charts__title" data-parallax-pattern="chartsTitle">
+          <p class="text-small">Where to find it</p>
+          <h2 class="h1">Laugavegur 62,<br>in the middle of the city.</h2>
+        </div>
+      </div>
+    </div>
+
+    <div class="l-charts__card-layer">
+      <div class="sticky l-charts__card-sticky">
+        <div class="sticky__layer sticky__layer--sticky l-charts__cards js-charts-cards"></div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ══════════════ 10 · HALL OF FAME ══════════════ -->
+<section id="fame" class="section section--fame ui-dark" data-hold>
+  <div class="l-chapter-ground parallax-image-move" aria-hidden="true">
+    <img class="appear" data-img="g-bench" data-w="720 1440 2200" data-parallax-pattern="backgroundMove" alt="">
+  </div>
+  <div class="l-chapter-ground__scrim" aria-hidden="true"></div>
+  <div class="l-fame__head">
+    <p class="text-small" data-reveal="wipe">Hall of fame</p>
+    <h2 class="h1" data-reveal="title">Who ended up wearing one</h2>
+    <p class="l-fame__lede" data-reveal="text">People find the shop rather than the other way round. The list below is theirs, published on their own site.</p>
+  </div>
+  <div class="l-fame__grid" data-reveal-group data-reveal-delay="80">
+    <figure class="l-fame__card" data-reveal="rise"><img class="appear" data-img="hof-cave" data-w="720 1440" alt="Nick Cave wearing a JS Watch timepiece" width="720" height="503"><figcaption><span class="l-fame__name h3">Nick Cave</span></figcaption></figure>
+    <figure class="l-fame__card" data-reveal="rise"><img class="appear" data-img="hof-daniels" data-w="720 1440" alt="Jeff Daniels wearing a JS Watch timepiece" width="720" height="579"><figcaption><span class="l-fame__name h3">Jeff Daniels</span></figcaption></figure>
+    <figure class="l-fame__card" data-reveal="rise"><img class="appear" data-img="hof-harington" data-w="720 1440" alt="Kit Harington wearing a JS Watch timepiece" width="720" height="487"><figcaption><span class="l-fame__name h3">Kit Harington</span></figcaption></figure>
+    <figure class="l-fame__card" data-reveal="rise"><img class="appear" data-img="hof-ramsay" data-w="720 1440" alt="Gordon Ramsay wearing a JS Watch timepiece" width="720" height="523"><figcaption><span class="l-fame__name h3">Gordon Ramsay</span></figcaption></figure>
+    <figure class="l-fame__card" data-reveal="rise"><img class="appear" data-img="hof-bubbi" data-w="720 1440" alt="Bubbi Morthens wearing a JS Watch timepiece" width="720" height="501"><figcaption><span class="l-fame__name h3">Bubbi Morthens</span></figcaption></figure>
+  </div>
+  <ul class="l-fame__register" data-reveal="fade-in slow">
+    <li>Tom Cruise</li><li>Quentin Tarantino</li><li>Mads Mikkelsen</li><li>Yoko Ono</li>
+    <li>Jude Law</li><li>Viggo Mortensen</li><li>Ben Stiller</li><li>Ed Sheeran</li>
+    <li>Dennis Quaid</li><li>Sean Lennon</li><li>Elvis Costello</li><li>Tobey Maguire</li>
+    <li>Ian Anderson</li><li>Katie Couric</li><li>Richard Quest</li><li>Vinnie Jones</li>
+    <li>King Constantine II</li><li>The Dalai Lama</li><li>Eli Roth</li><li>Alain Robert</li>
+    <li>Helgi Tómasson</li><li>Lewis Black</li><li>The Icelandic Coast Guard</li><li>Iceland’s national football team</li>
+  </ul>
+</section>
+
+<!-- ══════════════ 11 · VISIT ══════════════ -->
+<section id="visit" class="section section--visit ui-dark" data-hold>
+  <div class="l-visit__bg parallax-image-move">
+    <img class="appear" data-img="sundholl" data-w="720 1440" data-parallax-pattern="visitBgMove visitBgScale" alt="A JS Watch advertisement photographed at Sundhöllin swimming pool in Reykjavík, captioned we take our water testing very seriously" width="720" height="395">
+  </div>
+  <div class="l-visit__scrim" aria-hidden="true"></div>
+  <div class="l-visit__inner" data-parallax-pattern="visitScreen">
+    <article class="l-visit__card ui-light">
+      <p class="text-small">Visit the workshop</p>
+      <h2 class="h2">Laugavegur 62</h2>
+      <p class="l-visit__body">The showroom and the entire manufacture are one room. You can watch a watch being assembled, and you will be talking to the people who made it.</p>
+      <dl class="l-visit__facts">
+        <div><dt class="text-small">Workshop</dt><dd>Laugavegur 62<br>101 Reykjavík</dd></div>
+        <div><dt class="text-small">Office &amp; design studio</dt><dd>Hverfisgata 82B<br>101 Reykjavík</dd></div>
+        <div><dt class="text-small">Telephone</dt><dd><a href="tel:+3545514100">+354 551 4100</a></dd></div>
+        <div><dt class="text-small">Email</dt><dd><a href="mailto:info@jswatch.com">info@jswatch.com</a></dd></div>
+      </dl>
+      <a class="l-visit__cta" href="mailto:info@jswatch.com?subject=Enquiry%20from%20the%20website"><span>Enquire about a watch</span><span class="l-visit__cta-arrow" aria-hidden="true">→</span></a>
+      <a class="l-visit__second" href="https://www.jswatch.com/" target="_blank" rel="noopener">See the full collection<span aria-hidden="true"> →</span></a>
+      <p class="l-visit__award text-small">Shop of the Year (Njarðarskjöldurinn), awarded 20 February 2014</p>
+    </article>
+  </div>
+</section>
+
+</main>
+
+<!-- ══════════════ FOOTER ══════════════ -->
+<footer class="footer ui-dark">
+  <div class="l-chapter-ground parallax-image-move" aria-hidden="true">
+    <img class="appear" data-img="g-caseback" data-w="720 1440" alt="">
+  </div>
+  <div class="l-chapter-ground__scrim l-chapter-ground__scrim--deep" aria-hidden="true"></div>
+  <div class="footer__headline">
+    <h2 class="footer__big h0" id="footer-big">JS Watch co.</h2>
+    <h2 class="footer__big footer__big--mask h0" id="footer-mask" aria-hidden="true">JS Watch co.</h2>
+  </div>
+  <div class="footer__cols">
+    <div class="footer__col">
+      <p class="text-small">The manufacture</p>
+      <p>Laugavegur 62<br>101 Reykjavík<br>Iceland</p>
+    </div>
+    <div class="footer__col">
+      <p class="text-small">Contact</p>
+      <p><a href="tel:+3545514100">+354 551 4100</a><br><a href="mailto:info@jswatch.com">info@jswatch.com</a></p>
+    </div>
+    <div class="footer__col">
+      <p class="text-small">Hours</p>
+      <p>Mon–Fri 10:00–18:00<br>Sat 10:00–16:00</p>
+    </div>
+    <div class="footer__col">
+      <p class="text-small">Live site</p>
+      <p><a href="https://www.jswatch.com/" target="_blank" rel="noopener">jswatch.com</a></p>
+    </div>
+  </div>
+  <div class="footer__base">
+    <p class="text-small">Redesign concept — prototype only. Not affiliated with JS Watch co. Reykjavík. Photography © JS Watch co. Reykjavík.</p>
+    <a class="footer__credit" href="#top" aria-label="SNDR Studio">
+      <span class="footer__credit-mark">SNDR</span>
+      <span class="footer__credit-diamond" aria-hidden="true"></span>
+      <span class="footer__credit-studio text-small">STUDIO</span>
+    </a>
+  </div>
+  <p class="footer__attr text-small">Chart tiles © <a href="https://carto.com/attributions" target="_blank" rel="noopener">CARTO</a>, data © <a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener">OpenStreetMap</a> contributors.</p>
+</footer>
+
+<!-- ══════════════ CHROME ══════════════ -->
+<div id="scrollbar" class="c-scrollbar"><div class="c-scrollbar__thumb"></div></div>
+<div id="scroll-cue" class="scroll-cue" aria-hidden="true"><span class="scroll-cue__line"></span><span class="scroll-cue__text text-small">Scroll</span></div>
+<div id="cursor" class="cursor" aria-hidden="true">
+  <svg class="cursor__ring" viewBox="0 0 128 128"><circle class="cursor__bar" cx="64" cy="64" r="59"/></svg>
+  <span class="cursor__label" id="cursor-label">View</span>
+</div>
+
+<script type="module" src="app.js"></script>
+</body>
+</html>
